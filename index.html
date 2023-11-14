@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/output.css" />
+  <script src="/script.js" defer></script>
+  <script src="https://unpkg.com/gsap@2.1.3/src/uncompressed/TweenMax.js"></script>
+  </head>
+  <title>Amy|Desinger</title>
+  
+</head>
+
+<body class="bg-orange-50">
+  <div class="  flex justify-between lg:px-32 px-8 py-8">
+    <img src="/assets/logo.svg" alt="" />
+    <button class="bg-black font-500 text-white h-12 lg:px-16 px-8 rounded-full shadow-md mt-2">
+      Free Consultation
+    </button>
+  </div>
+
+  <h1 class="text-center text-6xl font-800 mt-16 px-2" id="animated-title">
+    Design solutions made easy
+  </h1>
+  <p class="text-center mx-auto text-gray-400 mt-5 p-2 md:w-1/2 lg:w-1/2 navp ">
+    With over ten years of experience in various design disciplines, I’m your
+    one-stop shop for your design needs.
+  </p>
+
+  <div class="  grid lg:grid-cols-3 md:grid-cols-2 gap-8 lg:px-32 px-2 mt-20">
+    <div class="bg-blue-700  rounded-2xl px-8 py-2 flex flex-col justify-between prog1 ">
+      <img src="/assets/pattern-graphic-design.svg" alt="" class="self-end" />
+      <h2 class="font-600 lg:mt-28 text-lg text-white">Graphic Design</h2>
+    </div>
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-5">
+      <div class="bg-yellow-300 rounded-xl p-3 flex flex-col justify-between prog2">
+        <img src="/assets/pattern-ui-ux.svg" alt="" class="self-end" />
+        <h2 class="font-600 text-white text-lg mt-12">Ui / Ux</h2>
+      </div>
+      <div class="bg-red-400 rounded-xl p-3 flex flex-col justify-between prog2">
+        <img src="/assets/pattern-apps.svg" alt="" class="self-end" />
+        <h2 class="font-600 text-white text-lg mt-12">Apps</h2>
+      </div>
+      <div class="bg-rose-500 rounded-xl lg:col-span-2 p-2 md:col-span-2 px-4 flex flex-col justify-between prog3">
+        <img src="/assets/pattern-illustrations.svg" alt="" class="self-end" />
+        <h2 class="font-600 text-white text-lg mt-12">Illustrations</h2>
+      </div>
+    </div>
+    <div class="grid lg:grid-rows-2 gap-6 md:col-span-2 lg:col-span-1">
+      <div class="bg-green-300 rounded-xl p-2 flex flex-col justify-between prog4">
+        <img src="/assets/pattern-photography.svg" alt="" class="self-end" />
+        <h2 class="font-600 text-white text-lg mt-12">Photography</h2>
+      </div>
+      <div class="bg-violet-900 rounded-xl p-2 flex flex-col justify-between prog4">
+        <img src="/assets/pattern-motion-graphics.svg" alt="" class="self-end" />
+        <h2 class="font-600 text-white text-lg mt-12">Motion Graphics</h2>
+      </div>
+    </div>
+  </div>
+  <div class="grid lg:grid-cols-2 mt-20 lg:px-32 px-2">
+    <img src="/assets/image-amy.webp" alt="web" class="lg:w-4/5 m-auto" />
+    <div class="m-auto">
+      <h1 class="text-4xl font-700 mt-6 text-center lg:text-start">
+        I’m Amy, and I’d love to work on your next project
+      </h1>
+      <p class="text-gray-400 mt-10 text-center lg:text-start">
+        I love working with others to create beautiful design solutions. I’ve
+        designed everything from brand illustrations to complete mobile apps.
+        I’m also handy with a camera!
+      </p>
+      <div class="lg:block flex justify-center">
+        <button class="bg-rose-400 font-500 items-center text-white h-12 lg:px-10 px-8 rounded-full shadow-md mt-10">
+          <a href="#">Free Consultation</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="slide px-2">
+    <h1 class="text-3xl font-800 text-center mt-12">My work</h1>
+    <div class="flex justify-normal overflow-x-auto gap-5 mt-8 mb-6 img-list carousel">
+      <img src="/assets/image-slide-1.jpg" alt="1" class="rounded-2xl" />
+      <img src="/assets/image-slide-2.jpg" alt="2" class="rounded-2xl" />
+      <img src="/assets/image-slide-3.jpg" alt="3" class="rounded-2xl" />
+      <img src="/assets/image-slide-4.jpg" alt="4" class="rounded-2xl" />
+      <img src="/assets/image-slide-5.jpg" alt="5" class="rounded-2xl" />
+    </div>
+    <div class="flex justify-center gap-6">
+      <button id="prev-slide" class="slide_btn cursor-pointer translate-y-1/2"><img src="/assets/icon-arrow-left.svg"
+          alt="" class="bg-black rounded-full p-6 hover:bg-slate-500" /></button>
+      <button id="next-slide" class="slide_btn cursor-pointer translate-y-1/2"><img src="/assets/icon-arrow-right.svg"
+          alt="" class="bg-black rounded-full p-6 hover:bg-slate-500" />
+    </div></button>
+  </div>
+  <div
+    class=" lg:p-16 w-9/12 p-4 mx-auto mt-16 rounded-xl mb-10 bg-black text-white lg:grid grid-cols-3 lg:text-start text-center ">
+    <div class="col-span-2">
+      <h1 class="text-4xl font-700 mb-6 ">Book a call with me</h1>
+      <p class="lg:w-2/3">I’d love to have a chat to see how I can help you.
+        The best first step is for us to discuss your project duringa
+        free consultation. Then we can move forward from there.</p>
+    </div>
+    <button class="bg-rose-400 font-500   h-14 px-4 w-2/3 rounded-full shadow-md mt-14"><a href="#"> Free Consultation
+      </a></button>
+
+  </div>
+  <div class="flex justify-between lg:px-48 px-8 py-8">
+    <img src="/assets/logo.svg" alt="" />
+    <button class="bg-black hover:bg-slate-500 font-500 text-white h-12 lg:px-10  px-8 rounded-full shadow-md mt-2">
+      Free Consultation
+    </button>
+  </div>
+  <script>
+    // Function to animate title letter by letter
+    const animateTitle = () => {
+      const title = document.getElementById("animated-title");
+
+      // Split the title text into individual letters
+      const letters = title.textContent.split("");
+
+      // Empty the title and set its position to relative
+      title.textContent = "";
+      title.style.position = "relative";
+
+      // Create a timeline for the animation
+      const tl = new TimelineMax();
+
+      // Loop through each letter and create a tween for it
+      letters.forEach((letter, index) => {
+        const span = document.createElement("span");
+        span.textContent = letter;
+        span.style.display = "inline";
+
+        
+        title.appendChild(span);
+
+        // Create a tween for the current letter
+        tl.from(span, 0.2, {
+          opacity: 0,
+          x: "100%",
+          delay: 0 * index, // Stagger the animation
+        });
+      });
+
+      // You can add more animations or timeline events here
+
+      return tl;
+    };
+
+    // Call the animateTitle function
+    animateTitle();
+
+    TweenMax.from(".navp", 8, {
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.staggerFrom(".prog1", 10, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+        TweenMax.staggerFrom(".prog2", 12, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.1)
+        TweenMax.staggerFrom(".prog3", 14, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+        TweenMax.staggerFrom(".prog4", 16, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+
+  </script>
+</body>
+
+</html>
