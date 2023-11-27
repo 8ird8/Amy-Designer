@@ -29,7 +29,7 @@ const dragStart = (e) => {
 
 const dragging = (e) => {
     // scrolling images/carousel to left according to mouse pointer
-    if(!isDragStart) return;
+    if(!isdragStart) return;
     e.preventDefault();
     isDragging = true;
     carousel.classList.add("dragging");
@@ -39,10 +39,10 @@ const dragging = (e) => {
 }
 
 const dragStop = () => {
-    isDragStart = false;
+    isdragStart = false;
     carousel.classList.remove("dragging");
 
-    if(!isDragging) return;
+    if(!isdragging) return;
     isDragging = false;
     
 }
